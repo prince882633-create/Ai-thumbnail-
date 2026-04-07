@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Bebas Neue", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0f] text-[#f0f0f8] antialiased;
+  }
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(255, 60, 95, 0.3);
+}
+
+.glass-panel {
+  @apply bg-[#16161f]/80 backdrop-blur-xl border border-white/10;
+}
+
+.accent-gradient {
+  @apply bg-gradient-to-r from-[#ff3c5f] via-[#7c3aed] to-[#f5c518];
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap');
